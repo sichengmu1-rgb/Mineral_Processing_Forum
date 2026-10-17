@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- 上升的气泡，取浮选的意象；配色与站点主色一致 -->
+  <rect width="64" height="64" rx="14" fill="#2E6A9E"/>
+  <circle cx="23" cy="28" r="10" fill="#DCE9F2"/>
+  <circle cx="43" cy="21" r="6" fill="#A8C8E0"/>
+  <circle cx="38" cy="44" r="7" fill="#7BAFD4"/>
+</svg>

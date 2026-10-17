@@ -1,0 +1,500 @@
+{
+  "_note": "由 backend/forum.db 导出。前端静态演示版用它作为初始数据。",
+  "meta": {
+    "ore_types": [
+      "铜",
+      "钼",
+      "铅锌",
+      "金",
+      "铁",
+      "煤",
+      "磷",
+      "钨锡"
+    ],
+    "processes": [
+      "粗选",
+      "精选",
+      "扫选",
+      "磨矿",
+      "分级",
+      "脱水",
+      "其他"
+    ],
+    "statuses": [
+      {
+        "label": "待补全",
+        "value": "published"
+      },
+      {
+        "label": "部分结构化",
+        "value": "partial"
+      },
+      {
+        "label": "已闭环",
+        "value": "closed"
+      }
+    ],
+    "current_user": {
+      "id": "me",
+      "nickname": "我",
+      "title": null
+    }
+  },
+  "posts": [
+    {
+      "author": {
+        "id": "u1",
+        "nickname": "老马",
+        "title": "某铜矿浮选工"
+      },
+      "card": {
+        "action": "先把松醇油降到 12 g/t，同时把充气量从 1.2 降到 0.9 m³/min，20 分钟后泡沫明显变稳，没有再冒槽。",
+        "conditions": "给矿品位 0.68%，磨矿细度 -74μm 占 62%，矿浆浓度 32%，pH 10.5，丁黄药 60 g/t，松醇油 20 g/t",
+        "diagnosis": [
+          "起泡剂过量导致泡沫过脆",
+          "给矿品位偏高、浮选浓度偏大",
+          "充气量过大"
+        ],
+        "equipment": "充气机械搅拌式浮选机 16m³",
+        "ore_type": "铜",
+        "process": "粗选",
+        "result": "有效。当天精矿品位 21.3%，回收率 88.6%，比前一天提高 1.2 个百分点。",
+        "tags": [
+          "冒槽",
+          "起泡剂",
+          "铜粗选"
+        ]
+      },
+      "created_at": "2026-10-13T22:01:45",
+      "id": "df43b664f7e8",
+      "images": [
+        "https://picsum.photos/seed/df43b664f7e80/640/420",
+        "https://picsum.photos/seed/df43b664f7e81/640/420"
+      ],
+      "phenomenon": "今天白班开始铜粗选第一槽一直冒槽，泡沫发白、发脆，刮出来一层就塌，矿浆面压不住，已经往外溢了。调整充气量没什么用。",
+      "replies": [
+        {
+          "accepted": true,
+          "author": {
+            "id": "u4",
+            "nickname": "王工",
+            "title": null
+          },
+          "content": "先看松醇油。泡沫发白、发脆、一刮就塌，是典型的起泡剂过量特征，跟充气量关系不大。",
+          "created_at": "2026-10-13T23:01:45",
+          "id": "afa52fb5cb9a"
+        },
+        {
+          "accepted": false,
+          "author": {
+            "id": "u1",
+            "nickname": "老马",
+            "title": "某铜矿浮选工"
+          },
+          "content": "确实，把松醇油降下来就好了。",
+          "created_at": "2026-10-13T23:31:45",
+          "id": "add3c74f08e2"
+        },
+        {
+          "accepted": false,
+          "author": {
+            "id": "u3",
+            "nickname": "小陈",
+            "title": "矿物加工在读"
+          },
+          "content": "请教一下，起泡剂过量为什么会冒槽？书上说不是应该泡沫更稳吗？",
+          "created_at": "2026-10-14T00:01:45",
+          "id": "4ded019af257"
+        }
+      ],
+      "reply_count": 3,
+      "status": "closed",
+      "title": "铜粗选槽冒槽，泡沫直接往外溢"
+    },
+    {
+      "author": {
+        "id": "u2",
+        "nickname": "阿凯",
+        "title": "选厂技术员"
+      },
+      "card": {
+        "action": null,
+        "conditions": null,
+        "diagnosis": [],
+        "equipment": "φ350 水力旋流器",
+        "ore_type": "铜",
+        "process": "分级",
+        "result": null,
+        "tags": [
+          "旋流器不稳",
+          "分级"
+        ]
+      },
+      "created_at": "2026-10-11T22:01:45",
+      "id": "2c74ccb3d6ea",
+      "images": [
+        "https://picsum.photos/seed/2c74ccb3d6ea0/640/420",
+        "https://picsum.photos/seed/2c74ccb3d6ea1/640/420"
+      ],
+      "phenomenon": "二段闭路磨矿的旋流器这几天很不稳，溢流细度一会儿 65% 一会儿 78%，返砂量忽大忽小，泵池液位也跳。",
+      "replies": [
+        {
+          "accepted": false,
+          "author": {
+            "id": "u6",
+            "nickname": "李工",
+            "title": "设备厂家工程师"
+          },
+          "content": "先查泵池液位和给矿压力。压力不稳，分级效率肯定不稳。",
+          "created_at": "2026-10-11T23:01:45",
+          "id": "a1e7faa9ba60"
+        },
+        {
+          "accepted": false,
+          "author": {
+            "id": "u2",
+            "nickname": "阿凯",
+            "title": "选厂技术员"
+          },
+          "content": "压力表是有点跳，回头查一下泵。",
+          "created_at": "2026-10-11T23:31:45",
+          "id": "e7291815897f"
+        }
+      ],
+      "reply_count": 2,
+      "status": "partial",
+      "title": "旋流器分级不稳定，返砂忽大忽小"
+    },
+    {
+      "author": {
+        "id": "u6",
+        "nickname": "李工",
+        "title": "设备厂家工程师"
+      },
+      "card": {
+        "action": null,
+        "conditions": null,
+        "diagnosis": [],
+        "equipment": null,
+        "ore_type": "金",
+        "process": "粗选",
+        "result": null,
+        "tags": [
+          "指标下降",
+          "金矿",
+          "波动"
+        ]
+      },
+      "created_at": "2026-10-10T22:01:45",
+      "id": "3de04652fa24",
+      "images": [
+        "https://picsum.photos/seed/3de04652fa240/640/420"
+      ],
+      "phenomenon": "同一批矿，早中晚三班的金精矿品位能差 15 g/t，取样化验没问题，就是波动大。",
+      "replies": [
+        {
+          "accepted": false,
+          "author": {
+            "id": "u5",
+            "nickname": "老周",
+            "title": "某铅锌矿值班长"
+          },
+          "content": "看是不是配矿的问题，三班进的矿不一样。",
+          "created_at": "2026-10-10T23:01:45",
+          "id": "c7831f38a789"
+        }
+      ],
+      "reply_count": 1,
+      "status": "partial",
+      "title": "金矿浮选精矿品位波动很大"
+    },
+    {
+      "author": {
+        "id": "u2",
+        "nickname": "阿凯",
+        "title": "选厂技术员"
+      },
+      "card": {
+        "action": "把水玻璃用量提到 500 g/t，精选浓度从 18% 降到 12%，同时加强预先脱泥。",
+        "conditions": "给矿品位 25%，矿浆浓度 18%，pH 8.5，煤油 120 g/t，水玻璃 300 g/t",
+        "diagnosis": [
+          "矿泥含量升高",
+          "抑制剂添加量不足",
+          "精选浓度偏高"
+        ],
+        "equipment": "浮选柱",
+        "ore_type": "钼",
+        "process": "精选",
+        "result": "有效。一周后精矿品位回到 44.5%，泡沫不再发黏。",
+        "tags": [
+          "泡沫异常",
+          "钼精选",
+          "矿泥"
+        ]
+      },
+      "created_at": "2026-10-08T22:01:45",
+      "id": "ff230b910e1b",
+      "images": [
+        "https://picsum.photos/seed/ff230b910e1b0/640/420",
+        "https://picsum.photos/seed/ff230b910e1b1/640/420",
+        "https://picsum.photos/seed/ff230b910e1b2/640/420"
+      ],
+      "phenomenon": "钼精选的泡沫这两周变得特别黏，像糊状，泡沫上带很多矿泥，精矿品位从 45% 掉到 38% 左右。",
+      "replies": [
+        {
+          "accepted": false,
+          "author": {
+            "id": "u5",
+            "nickname": "老周",
+            "title": "某铅锌矿值班长"
+          },
+          "content": "矿泥上浮带进来的。你们是不是最近换了采矿段？",
+          "created_at": "2026-10-08T23:01:45",
+          "id": "34f3084d377c"
+        },
+        {
+          "accepted": true,
+          "author": {
+            "id": "u2",
+            "nickname": "阿凯",
+            "title": "选厂技术员"
+          },
+          "content": "对，上个月采场换到氧化带那边了，矿泥确实多。",
+          "created_at": "2026-10-08T23:31:45",
+          "id": "176c0da277dc"
+        },
+        {
+          "accepted": false,
+          "author": {
+            "id": "u4",
+            "nickname": "王工",
+            "title": null
+          },
+          "content": "加强脱泥 + 加水玻璃，浓度也要降下来，18% 对精选来说偏高。",
+          "created_at": "2026-10-09T00:01:45",
+          "id": "0a332b8764d2"
+        }
+      ],
+      "reply_count": 3,
+      "status": "closed",
+      "title": "钼精选泡沫突然变黏，精矿品位掉得厉害"
+    },
+    {
+      "author": {
+        "id": "u5",
+        "nickname": "老周",
+        "title": "某铅锌矿值班长"
+      },
+      "card": {
+        "action": null,
+        "conditions": null,
+        "diagnosis": [],
+        "equipment": null,
+        "ore_type": "铅锌",
+        "process": "粗选",
+        "result": null,
+        "tags": [
+          "指标下降",
+          "铅锌"
+        ]
+      },
+      "created_at": "2026-10-04T22:01:45",
+      "id": "06104a98c97e",
+      "images": [
+        "https://picsum.photos/seed/06104a98c97e0/640/420"
+      ],
+      "phenomenon": "铅精矿品位和回收率都比上月低，铅品位从 55% 掉到 49%，回收率掉了 6 个点。药剂没换，设备也没动过。",
+      "replies": [
+        {
+          "accepted": false,
+          "author": {
+            "id": "u4",
+            "nickname": "王工",
+            "title": null
+          },
+          "content": "先查原矿。品位掉了不一定是浮选的问题，采场配矿变了也会这样。",
+          "created_at": "2026-10-04T23:01:45",
+          "id": "6d0f434fe2c1"
+        },
+        {
+          "accepted": false,
+          "author": {
+            "id": "u5",
+            "nickname": "老周",
+            "title": "某铅锌矿值班长"
+          },
+          "content": "化验数据看了，原矿铅品位确实比上月低 0.1 个点，但回收率不该掉这么多。",
+          "created_at": "2026-10-04T23:31:45",
+          "id": "b5229a1ebf21"
+        }
+      ],
+      "reply_count": 2,
+      "status": "partial",
+      "title": "铅锌浮选指标这个月一直上不去，找不到原因"
+    },
+    {
+      "author": {
+        "id": "u3",
+        "nickname": "小陈",
+        "title": "矿物加工在读"
+      },
+      "card": {
+        "action": null,
+        "conditions": "给矿 P2O5 22%，pH 9.0，捕收剂 800 g/t",
+        "diagnosis": [
+          "捕收剂过量",
+          "回水中有机物累积"
+        ],
+        "equipment": "充气机械搅拌式浮选机",
+        "ore_type": "磷",
+        "process": "粗选",
+        "result": null,
+        "tags": [
+          "泡沫异常",
+          "磷矿",
+          "回水"
+        ]
+      },
+      "created_at": "2026-10-01T22:01:45",
+      "id": "c5fa54061f28",
+      "images": [
+        "https://picsum.photos/seed/c5fa54061f280/640/420",
+        "https://picsum.photos/seed/c5fa54061f281/640/420"
+      ],
+      "phenomenon": "磷矿反浮选，泡沫量特别大而且很稳，消泡水加了不少也压不住，后面浓缩池都受影响了。",
+      "replies": [
+        {
+          "accepted": false,
+          "author": {
+            "id": "u4",
+            "nickname": "王工",
+            "title": null
+          },
+          "content": "先减捕收剂，反浮选捕收剂过量泡沫就下不来。再看看回水的水质。",
+          "created_at": "2026-10-01T23:01:45",
+          "id": "6e0f2647804c"
+        }
+      ],
+      "reply_count": 1,
+      "status": "partial",
+      "title": "磷矿浮选泡沫太多，消不下去"
+    },
+    {
+      "author": {
+        "id": "u4",
+        "nickname": "王工",
+        "title": null
+      },
+      "card": {
+        "action": "把矿浆浓度从 80 g/L 提到 110 g/L，柴油改成乳化后添加，单耗降到 1.25 kg/t。",
+        "conditions": "入料灰分 22%，-0.5mm 占 85%，矿浆浓度 80 g/L，柴油 1.5 kg/t，仲辛醇 0.3 kg/t",
+        "diagnosis": [
+          "药剂制度不合理",
+          "入料粒度偏粗",
+          "浮选浓度偏低"
+        ],
+        "equipment": "机械搅拌式浮选机",
+        "ore_type": "煤",
+        "process": "粗选",
+        "result": "有效。单耗降到 1.25 kg/t，精煤产率还提高了 0.8 个百分点。",
+        "tags": [
+          "药剂问题",
+          "煤泥",
+          "节能降耗"
+        ]
+      },
+      "created_at": "2026-09-26T22:01:45",
+      "id": "8ab2f308c1ce",
+      "images": [
+        "https://picsum.photos/seed/8ab2f308c1ce0/640/420"
+      ],
+      "phenomenon": "我们厂煤泥浮选的捕收剂单耗 1.8 kg/t 干煤泥，问了几家同类厂都在 1.2 左右，想知道差在哪。",
+      "replies": [
+        {
+          "accepted": true,
+          "author": {
+            "id": "u6",
+            "nickname": "李工",
+            "title": "设备厂家工程师"
+          },
+          "content": "浓度偏低是主因。80 g/L 太稀了，提到 110 左右药剂单耗能降不少。",
+          "created_at": "2026-09-26T23:01:45",
+          "id": "44f071e20892"
+        },
+        {
+          "accepted": false,
+          "author": {
+            "id": "u4",
+            "nickname": "王工",
+            "title": null
+          },
+          "content": "另外柴油最好乳化后再加，直接加损失大。",
+          "created_at": "2026-09-26T23:31:45",
+          "id": "44053a609433"
+        }
+      ],
+      "reply_count": 2,
+      "status": "closed",
+      "title": "煤泥浮选药剂消耗比同类厂高不少"
+    },
+    {
+      "author": {
+        "id": "u4",
+        "nickname": "王工",
+        "title": null
+      },
+      "card": {
+        "action": "把 pH 提到 6.5，硫酸铜加到 350 g/t，再磨使 -74μm 提到 78%。",
+        "conditions": "给矿 TFe 66%，S 0.8%，pH 5.5，丁黄药 150 g/t，硫酸铜 200 g/t",
+        "diagnosis": [
+          "活化剂用量不足",
+          "pH 偏低导致黄药分解",
+          "粒度偏粗解离不充分"
+        ],
+        "equipment": "浮选机 8m³",
+        "ore_type": "铁",
+        "process": "扫选",
+        "result": "有效。硫降到 0.26%，铁品位基本没受影响。",
+        "tags": [
+          "脱硫",
+          "铁精矿",
+          "反浮选"
+        ]
+      },
+      "created_at": "2026-09-21T22:01:45",
+      "id": "89b29565d2c5",
+      "images": [
+        "https://picsum.photos/seed/89b29565d2c50/640/420",
+        "https://picsum.photos/seed/89b29565d2c51/640/420"
+      ],
+      "phenomenon": "磁选铁精矿含硫 0.8%，要求降到 0.3% 以下，反浮选脱硫效果一直不理想。",
+      "replies": [
+        {
+          "accepted": true,
+          "author": {
+            "id": "u4",
+            "nickname": "王工",
+            "title": null
+          },
+          "content": "pH 5.5 太低了，黄药在酸性条件下分解快，先提到 6.5 以上。",
+          "created_at": "2026-09-21T23:01:45",
+          "id": "966e04a26c56"
+        },
+        {
+          "accepted": false,
+          "author": {
+            "id": "u6",
+            "nickname": "李工",
+            "title": "设备厂家工程师"
+          },
+          "content": "粒度也要看，解离不充分的话再磨是必须的。",
+          "created_at": "2026-09-21T23:31:45",
+          "id": "aeab036e8508"
+        }
+      ],
+      "reply_count": 2,
+      "status": "closed",
+      "title": "铁精矿脱硫浮选硫含量降不下来"
+    }
+  ]
+}

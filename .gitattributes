@@ -1,2 +1,11 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# 统一换行符，避免 Windows 提交后在其它平台出现整文件 diff
+* text=auto eol=lf
+
+# 这些是二进制，别做换行转换
+*.png binary
+*.jpg binary
+*.ico binary
+*.pdf binary
+
+# Windows 批处理必须是 CRLF，且是 GBK 编码
+*.bat text eol=crlf

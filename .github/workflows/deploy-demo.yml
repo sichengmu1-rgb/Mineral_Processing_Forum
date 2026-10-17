@@ -1,0 +1,71 @@
+name: 部署静态演示版到 GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'frontend/**'
+      - '.github/workflows/deploy-demo.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: 安装依赖
+        working-directory: frontend
+        run: npm ci
+
+      - name: 构建演示版
+        working-directory: frontend
+        # VITE_DEMO=1 让前端走内存数据，不依赖 Flask 后端
+        # VITE_BASE  指向 Pages 的子路径，也是 React Router 的 basename
+        env:
+          VITE_DEMO: '1'
+          VITE_BASE: /Mineral_Processing_Forum/
+        run: npm run build
+
+      - name: 加上 SPA 路由回退
+        # GitHub Pages 是静态托管，直接访问 /posts/xxx 会 404。
+        # 复制一份 index.html 当 404.html，Pages 就会把它返回给 SPA，
+        # 由前端自己解析路由——否则分享出去的深链全部打不开。
+        working-directory: frontend
+        run: cp dist/index.html dist/404.html
+
+      - name: 配置 Pages
+        uses: actions/configure-pages@v5
+        with:
+          # 仓库还没开 Pages 时自动开启（Source 设为 GitHub Actions），
+          # 省掉"去 Settings 里点一下"这个手动步骤
+          enablement: true
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: frontend/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
