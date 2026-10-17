@@ -1,5 +1,5 @@
 {
-  "name": "frontend",
+  "name": "mineral-processing-forum-frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -33,5 +33,21 @@
     "tailwindcss": "^3.4.19",
     "typescript": "~6.0.2",
     "vite": "^8.3.0"
-  }
+  },
+  "description": "选矿技术论坛：把现场工况问题沉淀为结构化知识库",
+  "license": "AGPL-3.0-only",
+  "homepage": "https://sichengmu1-rgb.github.io/Mineral_Processing_Forum/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sichengmu1-rgb/Mineral_Processing_Forum.git"
+  },
+  "keywords": [
+    "mineral-processing",
+    "froth-flotation",
+    "knowledge-base",
+    "rag",
+    "open-dataset",
+    "flask",
+    "react"
+  ]
 }

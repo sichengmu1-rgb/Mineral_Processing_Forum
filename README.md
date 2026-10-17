@@ -1,6 +1,8 @@
 # 选矿技术论坛 · Mineral Processing Forum
 
 [![部署状态](https://github.com/sichengmu1-rgb/Mineral_Processing_Forum/actions/workflows/deploy-demo.yml/badge.svg)](https://github.com/sichengmu1-rgb/Mineral_Processing_Forum/actions/workflows/deploy-demo.yml)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+[![Data: CC BY-SA 4.0](https://img.shields.io/badge/Data-CC_BY--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 **在线演示：<https://sichengmu1-rgb.github.io/Mineral_Processing_Forum/>**
 （静态演示版，打开就能用，不用装任何东西）
@@ -254,9 +256,17 @@ node tools/shot.mjs http://localhost:5173/ shot.png 390 844 1
 - [Wills 矿物加工技术中文译本](https://github.com/sichengmu1-rgb/Wills_Mineral_Processing_Technology)
   —— 同一份知识库的教材来源，23 个单元
 
-## License
+## 许可
 
-[MIT](LICENSE)
+本项目采用双许可。
+
+**代码**：[GNU AGPL-3.0](LICENSE)。可以商用、修改、分发；如果修改后的版本作为网络服务提供给他人，必须公开对应源码。
+
+**数据**：[CC BY-SA 4.0](DATA_LICENSE)。可以复制、分发、改编；需署名，并以相同许可共享衍生作品。
+
+引用格式见 [CITATION.cff](CITATION.cff)，版权声明见 [NOTICE](NOTICE)。
+
+不用 MIT 的原因：MIT 和 CC BY 允许任何人把成果闭源拿走，与这个项目想解决的问题相反。AGPL 与 CC BY-SA 都不限制商业使用，只要求衍生作品保持开放。
 
 ---
 
@@ -279,3 +289,9 @@ Closed cases are desensitised and exported as knowledge chunks alongside textboo
 paper sources, each tagged with an evidence level (A: textbook/paper, B: closed case,
 C: open discussion). Anyone who has registered and taken part in the forum may use the
 resulting open dataset.
+
+## License
+
+Code is licensed under the [GNU AGPL-3.0](LICENSE); the dataset is licensed under
+[CC BY-SA 4.0](DATA_LICENSE). Both permit commercial use, but require derivative works
+to remain open. See [CITATION.cff](CITATION.cff) for citation.

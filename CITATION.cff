@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "如果本仓库的代码或数据对你的研究有帮助，请按以下格式引用。"
+title: "选矿技术论坛与选矿领域开源知识库"
+abstract: >-
+  面向选矿行业的技术社区与知识库。论坛把现场工况问题的讨论沉淀为结构化案例，
+  与教材、论文抽取的知识卡片合并为统一知识库，并以开源许可对外发布。
+authors:
+  - family-names: Mu
+    given-names: Sicheng
+    affiliation: "西安建筑科技大学 资源工程学院"
+  - family-names: Zhang
+    given-names: Chenxin
+    affiliation: "西安建筑科技大学 理学院"
+version: 0.1.0
+date-released: 2026-10-18
+license: AGPL-3.0
+license-url: "https://www.gnu.org/licenses/agpl-3.0.html"
+repository-code: "https://github.com/sichengmu1-rgb/Mineral_Processing_Forum"
+url: "https://sichengmu1-rgb.github.io/Mineral_Processing_Forum/"
+keywords:
+  - mineral-processing
+  - froth-flotation
+  - knowledge-base
+  - rag
+  - open-dataset
+  - flask
+  - react
