@@ -264,7 +264,7 @@ node tools/shot.mjs http://localhost:5173/ shot.png 390 844 1
 
 **数据**：[CC BY-SA 4.0](DATA_LICENSE)。可以复制、分发、改编；需署名，并以相同许可共享衍生作品。
 
-引用格式见 [CITATION.cff](CITATION.cff)，版权声明见 [NOTICE](NOTICE)。
+版权归穆思成、章晨昕所有（Copyright © 2026）。引用格式见 [CITATION.cff](CITATION.cff)。
 
 不用 MIT 的原因：MIT 和 CC BY 允许任何人把成果闭源拿走，与这个项目想解决的问题相反。AGPL 与 CC BY-SA 都不限制商业使用，只要求衍生作品保持开放。
 
